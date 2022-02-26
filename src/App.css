@@ -1,5 +1,15 @@
+body {
+    color: white;
+    background-color: #282c34;
+}
+
 .App {
   text-align: center;
+  font-size: calc(20px + 2vmin);
+  justify-content: center;
+  margin-top: 20px;
+  flex-direction: column;
+  width: 100%;
 }
 
 .App-logo {
@@ -14,14 +24,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
 }
 
 .App-link {
@@ -35,4 +40,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.current-date, .current-time {
+    display: flex;
+    padding: 0 50px;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    padding: 0 50px;
+    min-width: 500px;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.departure-table {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.departure-table thead {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.departure-table thead td {
+    padding: 0 50px;
 }
